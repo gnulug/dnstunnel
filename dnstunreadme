@@ -1,0 +1,6 @@
+Compile with:
+g++ `poslib-config --libs --cflags --server` -g server.cpp -o server
+Run with:
+sudo ./server
+
+Build and install poslib first! (it is provided here)
